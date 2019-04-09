@@ -2,11 +2,13 @@ package com.mjacksi.album123;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.BottomSheetDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.Toast;
+
+import com.google.android.material.bottomsheet.BottomSheetDialog;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void size15x15(View v) {
-        BottomSheetDialog mBottomSheetDialog = new BottomSheetDialog(this);
+        final BottomSheetDialog mBottomSheetDialog = new BottomSheetDialog(this);
         View sheetView = this.getLayoutInflater().inflate(R.layout.fragment_history_bottom_sheet, null);
         mBottomSheetDialog.setContentView(sheetView);
         mBottomSheetDialog.show();
@@ -39,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 //Toast.makeText(MainActivity.this, size, Toast.LENGTH_SHORT).show();
                 i.putExtra("size", size);
                 startActivity(i);
+                mBottomSheetDialog.hide();
             }
         });
 

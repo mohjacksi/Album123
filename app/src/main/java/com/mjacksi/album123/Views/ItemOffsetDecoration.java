@@ -2,10 +2,11 @@ package com.mjacksi.album123.Views;
 
 import android.content.Context;
 import android.graphics.Rect;
-import android.support.annotation.DimenRes;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
+
+import androidx.annotation.DimenRes;
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 
 // todo: implementing this class to make the spacing in recycler view perfect!
 public class ItemOffsetDecoration extends RecyclerView.ItemDecoration {

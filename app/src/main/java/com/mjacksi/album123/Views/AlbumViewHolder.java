@@ -1,10 +1,11 @@
 package com.mjacksi.album123.Views;
 
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
 
 import com.mjacksi.album123.R;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 public class AlbumViewHolder extends RecyclerView.ViewHolder {
 
